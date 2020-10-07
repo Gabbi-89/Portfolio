@@ -23,33 +23,14 @@ body {
     padding: 0;
 }
 
-.section-heading {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 48px;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    background-color: #991D3A;
-    margin-bottom: 0px;
-    padding: 0 10px;
-}
-
-.div-heading {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 38px;
-    letter-spacing: 0px;
-    color:#991D3A;
-    margin-bottom: 0px;
-    padding: 0 10px;
-}
-
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     text-align: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 /**** STYLING OF THE HEADER ****/
@@ -61,76 +42,59 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     padding: 80px 265px;
 }
 
-/**** Styling of the main part ****/
-.left-box {
-    margin-top: 80px;
+.text-box { /* Box with headings */
+    margin-top: 60px;
 }
 
-.right-box {
+.portfolio, .name {
+    text-align: left;
+    font-family:'Roboto', sans-serif;
+    font-size: 28px;
+    letter-spacing: 1.12px;
+    color: #ffffff;
+    margin-bottom: 2px;
+}
+
+.portfolio {
+    font-weight: normal;
+}
+
+.name, .title, .extra-title {
+    font-weight: bold;
+}
+
+.title, .extra-title {
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    margin-top: 0px;
+}
+
+.title {
+    margin-bottom: 2px;
+    line-height: 87px;
+    font-size: 83px;
+}
+
+.extra-title {
+    font-size: 50px;
+}
+
+.icon-picture-box { /* Box with icons with links and picture of me */
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-.portfolio {
-    text-align: left;
-    font-family:'Roboto', sans-serif;
-    font-weight: normal;
-    font-size: 28px;
-    letter-spacing: 1.12px;
-    color: #ffffff;
-    margin-bottom: 2px;
-}
-
-.name {
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 28px;
-    letter-spacing: 1.12px;
-    color: #ffffff;
-    margin-bottom: 2px;
-}
-
-.title {
-    text-align: left;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 83px;
-    color: #ffffff;
-    margin-top: 0px;
-    margin-bottom: 2px;
-    line-height: 87px;
-}
-
-.extra-title {
-    text-align: left;
-    font-family: 'Montserrat', sans-serif;
-    font-weight:  bold;
-    font-size: 50px;
-    color: #ffffff;
-    margin-top: 0px;
-}
-
-.me {
-    width: 290px;
-    height: 290px;
-    border: 3px solid #ffffff;
-    border-radius: 50%;
-    margin-top: 135px;
-    z-index: 1;
-}
-
-.icon-links {
+.icon-links { /* Div with the icons */
     display: flex;
 }
 
-.ellipse {
+.ellipse { /* To make a circle around the icons */
     border: 3px solid #FFFFFF;
     width: 79px;
     height: 80px;
@@ -141,33 +105,68 @@ header {
     margin-right: 10px;
 }
 
-.icon {
+.icon { /* Size of the icons */
     width: 31px;
     height: 30px;
 }
 
-.portfolio-section {
+.picture-of-me { /* Profile picture styling*/
+    /*position: absolute;
+    right: 19vw;
+    top: 40vh;*/
+    width: 290px;
+    height: 290px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    margin-top: 135px;
+    z-index: 1;
+}
+
+/*** General styling for all sections ***/
+.portfolio-section { /* The sections */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 70px 255px;
+    width: 100%;
 }
 
-.grey {
+.grey { /* Other color for the grey sections */
     background: #F4F4F4;
+}
+
+.section-heading, .div-heading { /* Big section heading and 
+    smaller heading in sections */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0px;
+    margin-bottom: 0px;
+    padding: 0 10px;
+}
+
+.section-heading {
+    font-size: 48px;
+    color: #FFFFFF;
+    background-color: #991D3A;
+}
+
+.div-heading { 
+    font-size: 38px;
+    color:#991D3A;
 }
 
 .normal-text {
     font-size: 30px; 
     font-family: 'Montserrat', sans-serif;
-    color: #000000;
 }
 
-.text-align-left {
+.text-align-left { /* For text that shall not be centered */
     text-align: left;
 }
 
+/** Section with intro text**/
 /* Decoration line & circle in beginning of intro-text*/
 .line {
     display: inline-block;
@@ -189,30 +188,21 @@ header {
     padding: 0px;
 }
 
-.tech-heading {
-    text-align: center;
-}
-
+/** Section with tech words **/
 .red-text {
     color: #991D3A;
 }
 
-.tech-sign {
-    color: #2B2E34;
-    background-color: #FDDFE7;
-    font-size: 12px;
-    padding: 4px 12px;
-    margin: 3px;
-}
-
-.linked-projects {
+/** Sections with projects & thoughts **/ 
+.featured-projects { /*For the projects/thoughts with pictures*/
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     margin-top: 40px;
 }
 
-.other-linked-projects {
+.other-linked-projects { /*For the projects/thoughts without pictures*/
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -223,35 +213,15 @@ header {
 .project-card {
     margin: 20px;
     width: 420px;
+    height: 430px;
 }
 
-.tech-sign-wrapper {
-    display: flex;
+.width {
+    max-width: 800px;
 }
 
-a {
-    text-decoration: none;
-}
-
-.project-link p {
-    color: #991D3A;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.bold-text {
-    font-family: 'Roboto', sans-serif;
-    color: #991D3A;
-    font-weight: bold;
-    margin: auto;
-}
-
-.left {
-    text-align: left;
-}
-
-.project-picture {
+/* The added pictures in the cards */
+.project-picture { 
     color:  #445FA8;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -261,10 +231,6 @@ a {
     text-align: center;
     padding-top: 105px;
     margin: 4px;
-}
-
-.news {
-    background-image: url('./Images/news.PNG');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -272,30 +238,37 @@ a {
 
 .business {
     background-image: url('./Images/accordion.PNG');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .chat {
     background-image: url('./Images/pizzabot.PNG');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .weather {
-    background-image: url('./Images/weather.PNG');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+   background-image: url('./Images/weather.PNG');
 }
 
 .cluedo {
     background-image: url('./Images/cludeo.PNG');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+}
+
+.bold-text { /* For bolder text in the project and thoughts sections */
+    font-family: 'Roboto', sans-serif;
+    color: #991D3A;
+    font-weight: bold;
+    margin: auto;
+}
+
+.tech-sign-wrapper { /* The wrapper for the tech-signs */
+    display: flex;
+}
+
+.tech-sign { /* The small pink boxes with tech-words.*/
+    color: #2B2E34;
+    background-color: #FDDFE7;
+    font-size: 12px;
+    padding: 4px 12px;
+    margin: 3px;
 }
 
 .description-text {
@@ -305,6 +278,7 @@ a {
     color: #000000;
 }
 
+/* For the different colors on the underlined links */
 .underline {
     text-decoration: underline #FDDFE7;
 }
@@ -317,38 +291,21 @@ a {
     text-decoration: underline #991D3A;
 }
 
-.other {
-    background-color: #FDDFE7;
-}
-
+/** Section with thoughts **/
 .thoughts-card {
-    display: flex;
+   /* display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-start;*/
     margin: 20px;
     width: 420px;
 }
 
-.no-margin {
-    margin: 0;
-    padding-left: 5px;
-    color: #000000;
-    text-align: left;
-    line-height: 1.5em;
-}
-
 .thoughts-one {
     background-image: url('./Images/thoughtsphoto.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .thoughts-two {
     background-image: url('./Images/thoughtsphoto.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .date {
@@ -360,10 +317,20 @@ a {
     text-align: left;
 }
 
-.width {
-    width: auto;
+.no-margin {
+    margin: 0;
+    padding-left: 5px;
+    color: #000000;
+    text-align: left;
+    line-height: 1.5em;
 }
 
+.width {
+    width: auto;
+    height: auto;
+}
+
+/** Section with skills **/
 .skills {
     display: flex;
     margin-top: 20px;
@@ -378,9 +345,9 @@ a {
     margin-top: 60px;
 }
 
+/** Section with big icons with links **/
 .big-icons-link {
     display: flex;
-    flex-direction: row;
     margin: 60px 0px;
 }
 
@@ -392,7 +359,7 @@ a {
     text-align: center;
 }
 
-.ellipse-big {
+.ellipse-big { /* To make a circled border around the icons */
     border: 3px solid #991D3A;
     width: 160px;
     height: 160px;
@@ -403,7 +370,7 @@ a {
     margin: 20px 40px -10px 40px;
 }
 
-.icon-big {
+.icon-big { /* Size of the icons */
     width: 60px;
     height: 60px;
 }
@@ -412,10 +379,6 @@ a {
 footer {
     width: 100vw;
     background-color: #445FA8;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-top: 70px;
 }
 
@@ -441,8 +404,8 @@ footer p {
     color: #FFFFFF;
 }
 
-/*** MEDIA QUERIES ******************************************************/
-@media (max-width: 668px) { /* Mobile device */
+/************* MEDIA QUERIES ******************************/
+@media screen and (max-width: 700px) { /* Mobile device */
     header {
         padding: 0px;
         display: flex;
@@ -450,6 +413,7 @@ footer p {
         justify-content: center;
         margin: 0;
         height: 460px;
+        width: 100vw;
     }
 
     .ellipse {
@@ -462,26 +426,27 @@ footer p {
         height: 15px;
     }
 
-    .left-box {
+    .text-box {
         margin-top: 40px;
         margin-left: 60px;
         z-index: 1;
+        width: 210px;
     }
 
-    .right-box {
+    .icon-picture-box {
         margin-right: 60px;
         margin-left: -80px;
         z-index: 5;
     }
 
     .icon-links {
-        margin-top: 120px;
+        margin-top: 60px;
     }
 
-    .me {
+    .picture-of-me {
         width: 100px;
         height: 100px;
-        margin-top: 225px;
+        margin-top: 280px;
     }
 
     .portfolio, .name {
@@ -501,13 +466,8 @@ footer p {
         font-size: 17px;
     }
 
-    .left
-    {
+    .text-align-left {
         margin-left: 5px;
-    }
-
-    .text-box {
-        width: 210px;
     }
 
     .section-heading {
@@ -531,6 +491,7 @@ footer p {
 
     .project-card {
         width: 300px;
+        height: auto;
     }
 
     .tech-sign {
@@ -538,7 +499,7 @@ footer p {
         padding: 4px;
     }
 
-    .linked-projects {
+    .featured-projects {
         flex-direction: column;
     }
 
@@ -583,31 +544,43 @@ footer p {
     .extra-margin-top {
         font-size: 12px;
     }
-    
 }
 
-@media (max-width: 1023px) { /* Tablet device */
+@media screen and (max-width: 1023px) { /* Tablet device */
+    header {
+        width: 100vw;
+        padding: 50px 40px;
+    }
+
+    .text-box {
+        margin-bottom: 40px;
+    }
+/*
+    .title {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .extra-title {
+        font-size: 40px;
+    }
+
+    .picture-of-me {
+        width: 200px;
+        height: 200px;
+        margin-top: 420px;
+    } */
+
     .portfolio-section {
         padding: 20px 60px;
     }
 
-    .linked-projects {
-        flex-direction: column;
-    }
-
     .other-linked-projects {
-        width: 800px;
+        width: auto;
     }
 
-    .left, .tech-sign-wrapper {
-        margin-left: 40px;
-    }
-
-    .thoughts-card {
-        margin-left: 40px;
-    }
-
-    .skills {
-        flex-wrap: wrap;
+    .skills-box {
+        margin: 20px 10px;
+        line-height: 20px;
     }
 }
