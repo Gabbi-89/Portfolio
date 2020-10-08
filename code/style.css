@@ -199,8 +199,9 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 40px;
+    width: 1150px;
 }
 
 .other-linked-projects { /*For the projects/thoughts without pictures*/
@@ -208,13 +209,23 @@ header {
     flex-direction: column;
     align-items: flex-start;
     width: 1010px;
-    margin-top: 40px;
+    margin: 40px 60px 10px 60px;
 }
 
 .project-card {
-    margin: 20px;
+    margin-top: 20px;
     width: 420px;
-    height: 430px;
+    height: 445px;
+}
+
+.hover { /* To look better when hovering these elements they needed 
+    some extra padding and margin */
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.hover:hover { /* When hovering the cards with links */
+    box-shadow: 0.5px 0.5px 0.5px 1px #c7c7c7;
 }
 
 .width {
@@ -295,8 +306,8 @@ header {
 
 /** Section with thoughts **/
 .thoughts-card {
-    margin: 20px;
-    width: 420px;
+    margin-top: 20px;
+    width: 440px;
 }
 
 .thoughts-one {
@@ -440,6 +451,10 @@ footer p {
         padding: 20px 60px;
     }
 
+    .featured-projects {
+        width: auto;
+    }
+
     .other-linked-projects {
         width: auto;
     }
@@ -447,6 +462,12 @@ footer p {
     .skills-box {
         margin: 20px 10px;
         line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .skills-box {
+        line-height: 28px;
     }
 }
 
