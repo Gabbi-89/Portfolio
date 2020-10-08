@@ -404,21 +404,21 @@ footer p {
 }
 
 /************* MEDIA QUERIES ******************************/
-@media screen and (max-width: 1025px) { /* Tablet device */
+@media screen and (max-width: 1080px) { /* Tablet device */
     header {
         width: 100vw;
-        height: 55vh;
+        height: 560px;
         padding: 50px 40px;
     }
 
     .text-box {
-        margin-top: 8vh;
+        margin-top: 80px;
         margin-left: 30px;
     }
 
     .icon-picture-box {
         margin-right: 30px;
-        margin-top: 2vh;
+        margin-top: 20px;
     }
 
     .title {
@@ -433,7 +433,7 @@ footer p {
     .picture-of-me {
         width: 200px;
         height: 200px;
-        margin-top: 23vh;
+        margin-top: 220px;
     } 
 
     .portfolio-section {
