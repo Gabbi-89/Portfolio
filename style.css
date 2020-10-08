@@ -35,9 +35,9 @@ a {
 
 /**** STYLING OF THE HEADER ****/
 header {
-    height: 75vh;
+    height: 85vh;
     width: 100vw;
-    background-image: url('https://images.unsplash.com/photo-1534762904-52dcff2b05e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80');
+    background-image: url('./Images/jess-bailey-unsplash.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -47,7 +47,7 @@ header {
 }
 
 .text-box { /* Box with headings */
-    margin-top: 60px;
+    margin-top: 8%;
 }
 
 .portfolio, .name {
@@ -55,7 +55,7 @@ header {
     font-family:'Roboto', sans-serif;
     font-size: 28px;
     letter-spacing: 1.12px;
-    color: #ffffff;
+    color: #000000;
     margin-bottom: 2px;
 }
 
@@ -70,7 +70,7 @@ header {
 .title, .extra-title {
     text-align: left;
     font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
+    color: #000000;
     margin-top: 0px;
 }
 
@@ -95,7 +95,7 @@ header {
 }
 
 .ellipse { /* To make a circle around the icons */
-    border: 3px solid #FFFFFF;
+    border: 3px solid #000000;
     width: 79px;
     height: 80px;
     border-radius: 50%;
@@ -113,9 +113,9 @@ header {
 .picture-of-me { /* Profile picture styling*/
     width: 290px;
     height: 290px;
-    border: 3px solid #ffffff;
+    border: 3px solid #000000;
     border-radius: 50%;
-    margin-top: 135px;
+    margin-top: 72%;
     z-index: 1;
 }
 
@@ -479,13 +479,12 @@ footer p {
     }
 
     .icon-picture-box {
-        margin-right: 60px;
-        margin-left: -80px;
+        margin: 0px 20px 0px -80px;
         z-index: 5;
     }
 
     .icon-links {
-        margin-top: 60px;
+        margin-top: 72px;
     }
 
     .picture-of-me {
@@ -568,6 +567,7 @@ footer p {
     
     .extra-margin-top {
         margin-top: 40px;
+        font-size: 12px;
     }
 
     .last {
@@ -585,9 +585,4 @@ footer p {
         width: 22px;
         height: 22px;
     }
-
-    .extra-margin-top {
-        font-size: 12px;
-    }
 }
-
