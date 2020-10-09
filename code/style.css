@@ -100,6 +100,10 @@ header {
     margin-right: 10px;
 }
 
+.last-ellipse {
+    margin-right: 0;
+}
+
 .icon { /* Size of the icons */
     width: 31px;
     height: 30px;
@@ -571,7 +575,8 @@ footer p {
 
     .other-linked-projects {
         width: 300px;
-        margin-top: 20px;
+        /*margin-top: 20px;*/
+        margin: 20px;
     }
 
     .thoughts-card {
