@@ -575,7 +575,6 @@ footer p {
 
     .other-linked-projects {
         width: 300px;
-        /*margin-top: 20px;*/
         margin: 20px;
     }
 
@@ -615,5 +614,50 @@ footer p {
     .icon-big { /* Smaller icon */
         width: 22px;
         height: 22px;
+    }
+}
+
+@media screen and (max-width: 340px) { /* For very small phones */
+    .icon-picture-box {
+        margin: 0px 10px 0px -120px;
+    }
+
+    .portfolio-section {
+        padding: 10px 15px;
+    }
+
+    .project-card {
+        width: auto;
+    }
+
+    .project-picture {
+        width: auto;
+    }
+
+    .thoughts-card {
+        width: auto;
+    }
+
+    .other-linked-projects {
+        margin: 0px;
+        width: auto;
+    }
+
+    .hover {
+        padding: 10px;
+    }
+
+    .big-icons-wrapper {
+        margin: 40px 15px 0 15px;
+    }
+
+    .ellipse-big { /* Smaller circle */
+        width: 49px;
+        height: 48px;
+    }
+
+    .icon-big { /* Smaller icon */
+        width: 18px;
+        height: 18px;
     }
 }
