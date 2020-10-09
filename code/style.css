@@ -1,8 +1,5 @@
 /**** GENERAL STYLING ****/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&family=Roboto:wght@400;700&display=swap');
 
 * {
     -webkit-box-sizing: border-box;
@@ -11,10 +8,6 @@
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
-
-html {
-    margin: 0;
-}
 
 body {
     margin: 0;
@@ -283,15 +276,24 @@ header {
 
 /* For the different colors on the underlined links */
 .underline {
-    text-decoration: underline #FDDFE7;
+    text-decoration-line: underline;
+    -webkit-text-decoration-line: underline;
+    text-decoration-color: #FDDFE7;
+    -webkit-text-decoration-color:#FDDFE7;
 }
 
 .underlined-link {
-    text-decoration: underline #000000;
+    text-decoration-line: underline;
+    -webkit-text-decoration-line: underline;
+    text-decoration-color: #000000;
+    -webkit-text-decoration-color: #000000;
 }
 
 .colored-underline {
-    text-decoration: underline #b53163;
+    text-decoration-line: underline;
+    -webkit-text-decoration-line: underline;
+    text-decoration-color: #b53163;
+    -webkit-text-decoration-color: #b53163;
 }
 
 /** Section with thoughts **/
@@ -351,7 +353,7 @@ header {
     margin: 60px 0px;
 }
 
-.wrapper {
+.icon-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -446,19 +448,6 @@ footer p {
         width: 420px;
     }
 
-    /* For the different colors on the underlined links */
-    .underline {
-        text-decoration: underline #FDDFE7;
-    }
-
-    .underlined-link {
-        text-decoration: underline #000000;
-        }
-
-    .colored {
-        text-decoration: underline #b53163;
-    }
-
     .skills-box {
         margin: 20px 10px;
         line-height: 20px;
@@ -509,6 +498,19 @@ footer p {
         width: 100px;
         height: 100px;
         margin-top: 280px;
+    }
+
+    /* Smaller size of the line and circle */
+    .line {
+        width: 50px;
+        height: 3px;
+        margin-bottom: 5.5px;
+    }
+
+    .circle {
+        width: 14px;
+        height: 14px;
+        margin: 0px 10px 0px -8px;
     }
 
     /* Smaller font-sizes in mobile format*/
@@ -576,17 +578,8 @@ footer p {
         width: 300px;
     }
 
-     /* For the different colors on the underlined links */
-     .underline {
-        text-decoration: underline #FDDFE7;
-    }
-
-    .underlined-link {
-        text-decoration: underline #000000;
-        }
-
-    .colored {
-        text-decoration: underline #b53163;
+    .underlined-link, .colored-underline {
+        text-decoration: none;
     }
 
     /* Skills section */
