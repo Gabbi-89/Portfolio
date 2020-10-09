@@ -4,7 +4,7 @@ I have created my portfolio showing my skills, coding projects and thoughts.
 
 ## Tech
 
-- HTML
+- HTML5
 
 - CSS
 
