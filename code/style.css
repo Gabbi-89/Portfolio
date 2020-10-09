@@ -157,10 +157,6 @@ header {
     font: 30px 'Montserrat', sans-serif;
 }
 
-.text-align-left { /* For text that shall not be centered */
-    text-align: left;
-}
-
 /** Section with intro text**/
 /* Decoration line & circle in beginning of intro-text*/
 .line {
@@ -180,6 +176,10 @@ header {
     background-color: #b53163;
     margin: 0px 12px 0px -10px;
     padding: 0px;
+}
+
+.intro-text { /* For text that shall not be centered */
+    text-align: left;
 }
 
 /** Section with tech words **/
@@ -259,6 +259,7 @@ header {
     font: bold 25px 'Roboto', sans-serif;
     color: #b53163;
     margin: auto;
+    text-align: left;
 }
 
 .tech-sign-wrapper { /* The wrapper for the tech-signs */
@@ -349,6 +350,10 @@ header {
 
 .extra-margin-top {
     margin-top: 60px;
+}
+
+.centered {
+    text-align: center;
 }
 
 /** Section with big icons with links **/
