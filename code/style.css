@@ -39,7 +39,7 @@ header {
     background-repeat: no-repeat;
     display: flex;
     justify-content: space-between;
-    padding: 80px 260px;
+    padding: 80px 290px;
 }
 
 .text-box { /* Box with headings */
@@ -420,7 +420,7 @@ footer p {
     header { 
         width: 100vw;
         height: 560px; /* Fixed size of the header to easier align the text box and picture */
-        padding: 50px 40px;
+        padding: 50px 80px;
     }
 
     .text-box { 
@@ -443,7 +443,7 @@ footer p {
     .picture-of-me { /* Smaller picture */
         width: 200px;
         height: 200px;
-        margin-top: 220px;
+        margin-top: 225px;
     } 
 
     .portfolio-section {
