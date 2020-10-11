@@ -31,7 +31,7 @@ a {
 
 /**** STYLING OF THE HEADER ****/
 header {
-    height: 85vh;
+    height: 580px;
     width: 100vw;
     background-image: url('./Images/jess-bailey-unsplash.jpg');
     background-position: center;
@@ -39,11 +39,11 @@ header {
     background-repeat: no-repeat;
     display: flex;
     justify-content: space-between;
-    padding: 80px 265px;
+    padding: 80px 260px;
 }
 
 .text-box { /* Box with headings */
-    margin-top: 8%;
+  margin-top: 70px;
 }
 
 .portfolio, .name {
@@ -72,11 +72,11 @@ header {
 .title {
     margin-bottom: 2px;
     line-height: 87px;
-    font-size: 83px;
+    font-size: 80px;
 }
 
 .extra-title {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .icon-picture-box { /* Box with icons with links and picture of me */
@@ -114,7 +114,7 @@ header {
     height: 290px;
     border: 3px solid #000000;
     border-radius: 50%;
-    margin-top: 72%;
+    margin-top: 160px;
     z-index: 1;
 }
 
@@ -403,9 +403,10 @@ footer {
     color: #FFFFFF;
 }
 
-footer h3 {
+.contact {
     font-weight: bold;
     font-size: 38px;
+    margin: 40px 0;
 }
 
 footer p {
