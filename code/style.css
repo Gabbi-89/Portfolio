@@ -191,7 +191,7 @@ header {
 .featured-projects { /*For the projects/thoughts with pictures*/
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+   
     justify-content: space-around;
     margin-top: 40px;
     width: 1150px;
@@ -237,6 +237,14 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.form {
+    background-image: url('./Images/form.PNG');
+}
+
+.music {
+    background-image: url('./Images/music.png');
 }
 
 .business {
@@ -308,11 +316,11 @@ header {
 }
 
 .thoughts-one {
-    background-image: url('./Images/thought-code.jpg');
+    background-image: url('./Images/thought-pink.jpg');
 }
 
 .thoughts-two {
-    background-image: url('./Images/thought-pink.jpg');
+    background-image: url('./Images/thought-code.jpg');
 }
 
 .date {
