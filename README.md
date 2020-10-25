@@ -10,5 +10,6 @@ I have created my portfolio showing my skills, coding projects and thoughts. I f
 
 ## View it live
 
-Link to view my portfolio: https://gabriellabolin.netlify.app/
+Link to view my portfolio: http://www.gabriellabolin.se/
+https://gabriellabolin.netlify.app/
 
