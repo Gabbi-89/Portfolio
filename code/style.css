@@ -112,10 +112,11 @@ header {
 .picture-of-me { /* Profile picture styling*/
     width: 290px;
     height: 290px;
-    border: 3px solid #000000;
-    border-radius: 50%;
+    border: 3px solid #000;
+    border-radius: 50%; 
     margin-top: 160px;
     z-index: 1;
+    object-fit: cover;
 }
 
 /*** General styling for all sections ***/
@@ -165,7 +166,7 @@ header {
     height: 3px;
     background-color: #b53163;
     padding: 0px;
-    margin-bottom: 7px;
+    margin-bottom: 7.3px;
 }
 
 .circle {
@@ -191,7 +192,6 @@ header {
 .featured-projects { /*For the projects/thoughts with pictures*/
     display: flex;
     flex-wrap: wrap;
-   
     justify-content: space-around;
     margin-top: 40px;
     width: 1150px;
@@ -229,7 +229,7 @@ header {
 .project-picture { 
     color:  #b53163;
     font: bold 28px 'Montserrat', sans-serif;
-    width: 420px;
+    width: 412px;
     height: 260px;
     text-align: center;
     padding-top: 105px;
@@ -237,11 +237,13 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    text-shadow: 2px 2px 2px #FFFFFF;
 }
 
 .form {
     background-image: url('./Images/form.PNG');
 }
+
 
 .music {
     background-image: url('./Images/music.png');
