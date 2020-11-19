@@ -1,4 +1,4 @@
-# Portfolio - Gabriella Bolin
+# My Portfolio - Gabriella Bolin
 
 I have created my portfolio showing my skills, coding projects and thoughts. I followed a given design and did it responsive for desktop, tablet and mobile. The site it tested across different browsers and it is made accessible and optimized for screen readers.  
 
@@ -11,5 +11,3 @@ I have created my portfolio showing my skills, coding projects and thoughts. I f
 ## View it live
 
 Link to view my portfolio: http://www.gabriellabolin.se/
-https://gabriellabolin.netlify.app/
-
