@@ -44,6 +44,7 @@ header {
 
 .text-box { /* Box with headings */
   margin-top: 70px;
+  max-width: 700px;
 }
 
 .portfolio, .name {
